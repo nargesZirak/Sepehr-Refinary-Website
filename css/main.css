@@ -21,7 +21,6 @@ img {
 }
 
 h1{
-    text-align: center;
     color:rgba(0,0,0,0.9);
     line-height: 3em;
 }
@@ -50,122 +49,160 @@ TOP NAVIGATION
    font-family:Kanit;
    border-radius: none;
    width:100%;  
-   background-color:rgba(98,94,86,0.1);
-   height:45px;
+   background-color:white;
+   height:120px;
+   width:1000px;
+   margin-left:200px;
+   position:relative;
+}
+
+.search-lang{
+    float:right;
+    display:inline-block;
+    width:30%;
+}
+
+.logo{
+    display:inline-block;
+    margin-top:10px;
+    color:rgba(162,187,37,1); 
+    font-size:1.2em;
+    float:left;
+    width:30%;
+}
+
+.logo img{
+    width:80px;
+    height:80px;
 }
 
 .lang-wrapper{
-    display:inline-block;
     height:30px;
     font-size:1.3em;
-    float:right;
-    margin-right:20px;
-    margin-top:8px;
-}
-
-.search-form{
     margin-right:0px;
-    margin-top:5px;
-    float:right;
+    margin-top:12px;
 }
-
-.lang-wrapper-list .selected,.lang-wrapper-list i a:hover{
-    border-bottom: #43b1b1 solid 2px;
-    text-decoration: none
-}
-
 
 ul.lang-wrapper-list {
     display:inline-block;
     list-style: none;   
-    margin:0;
 }
 ul.lang-wrapper-list li {
     display:inline-block;
     margin:0;
 }
+
 ul.lang-wrapper-list li a{
-    color:#43b1b1;
+    color:rgba(0,0,0,0.7);
 }
 
 ul.lang-wrapper-list li i{
     padding:0px 4px;
-     color:#43b1b1;
+    color:rgba(0,0,0,,0.7);
 }
 
 
+.lang-wrapper-list .selected,.lang-wrapper-list i a:hover{
+    border-bottom: rgba(0,0,0,0.7) solid 2px;
+    text-decoration: none;
+}
+
+.search-form{
+    margin-right:0px;
+    margin-top:25px;
+}
+
 .search-form .form-control{
-   border-color:#43b1b1;
-   height:35px;
-   color:rgba(98,94,86,0.1);
+   border:rgba(0,0,0,0.5) solid 2px;
+   height:40px;
+   font-size:1.7rem; 
 }
 
 .search-form .btn {
     width:40px;
-    height:35px;
-    background-color:#43b1b1;   
+    height:40px;
+    background-color:rgba(0,0,0,0.6); 
     color:white;
+    font-weight:900;
+    font-size:1.7rem;
+    top:0;
 }
+
+.search-form .btn:hover {
+    background-color:rgba(0,0,0,0.7);    
+}
+
 
 /**********************************
 MAIN NAVIGATION
 ***********************************/
 
 .navbar-main {
-  font-family:Kanit;
+   font-family:"Titillium Web";
    border-radius: none;
    position: relative;
    width:100%; 
    font-size: 1.6em;  
    color:#43b1b1;
+   background-color:rgba(162,187,37,1);
+   margin-top:5px;
 }
 
 .main-nav-items{
-   color:rgba(0,0,0,0.8);
+    color:#43b1b1;
+    color:white;
+}
+#myNavbar{
+    margin-right:250px;
 }
 
 .main-navbar-ul li{
-    background-color: white;
-    padding:10px 20px; 
+    padding:5px 5px; 
     transition-property: all ;
     transition-duration: 0.5s;
-    border: rgba(98,94,86,0.25) dotted 2px;
+   
+}
+
+.dropdown-menu  li a{
+    background-color:white;
+    font-size:1.2em;
+    transition-property: all ;
+    transition-duration: 0.3s;
 }
 
 
 .main-navbar-ul li:hover, .main-navbar-ul li:focus{
-    background-color: white;
-    color:#43b1b1;
-    box-sizing: border-box;
-    display:inline-block;
-    border: #A2BB37 solid 2px;
+    color:black;
     border-radius: 4px;
-    color:#43b1b1;
+    background-color:#b7ce57;
 }
 
 
 .navbar-nav > li > a:hover,  .navbar-nav > li > a:focus,   .navbar-nav > li > a:active {
-    background: white;
-    color:#43b1b1;
-}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
-    text-decoration: underline;
-   
-    color:#43b1b1;
-    background: white;
-    transition:none;
+    color:black;
+    border-radius: 4px;
 }
 
-
-.dropdown-menu  li, .dropdown-menu li:hover, .dropdown-menu li:focus{
-   border:none;
+.dropdown-menu  li{
+    border:none;
 }
 
 .dropdown-menu  li a{
-    color:rgba(0,0,0,0.7);
-    font-size:1.2em;
-    transition-property: all ;
-    transition-duration: 0.3s;
+    color:rgba(98,94,86,0.9);
+    font-weight:100;
+    font-size:1.4rem;
+}
+
+ .dropdown-menu li:hover, .dropdown-menu li:focus{
+   border:none;
+   background-color:white;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
+    text-decoration: underline;
+    background: white;
+    transition:none;
+    color:rgba(98,94,86,0.9);
 }
 
 .dropdown-menu{
@@ -178,40 +215,45 @@ MAIN PAGE
 ***********************************/
 
 .main-page-container{
-    background:  url(../images/-36699.png) no-repeat center;
+    background:  url(../images/Refinery%20Workers.jpg) no-repeat center;
     background-size: cover;
-    background-position: right top;
-    width: 100%; 
-    padding: 50px 90px;
-    position: relative;
-    height:770px;
-    border-bottom: rgba(98,94,86,0.6) solid 2px;
+    border-radius: 8px;
+    transition:border 0.6;
+    overflow:auto;
+    width:1000px;
+    height:500px;
+    transition-property:border-color;
+    transition-duration: .5s;
+    margin-top: 30px;
+    margin-left:200px;
+    position:relative;
 }
 
-.main-page-container:before{
+
+/*.main-page-container:before{
     content: '';
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-image: linear-gradient(to top,rgba(47,186,186,0.3)40%,rgba(47,186,186,0.0));
+	background-image: linear-gradient(to top,rgba(47,186,186,0.3)40%,rgba(47,186,186,0.3));
 	opacity: .6;
-}
+}*/
+
 
 
 .main-description{
     position:absolute;
     left:10%;
-    top:20%;
-    background-color:rgba(17,164,170,0.85);
-    background-color:rgba(162,187,37,0.85);
+    background-color:rgba(98,94,86,0.65);
     color:white;
-    height:75%;
+    height:100%;
     width:30%;
     vertical-align: middle;
-    padding:30px 50px;
-    font-size:2em;
+    padding:80px 30px;
+    font-size:1.5em;
+    font-weight:500;
 } 
 
 
@@ -224,9 +266,14 @@ MAIN PAGE
 } 
 
 .description a{
-    color:dimgray;
+    background-color:rgba(162,187,37,1);
+    border-radius:1px;
+    color:white;
     font-size:0.75em;
+    padding:8px 10px;
+    font-weight:600;
 } 
+
 
 .description a:hover{
     text-decoration:underline;
@@ -239,22 +286,20 @@ THIRD PAGE
 ***********************************/
 .goal-page-container{
     width: 100%; 
-    height:600px;
     padding: 50px 90px;
     position:relative;
     height:670px;
     overflow:auto;
+    margin-left:90px;
 }
 
 .capability-container{
     border: rgba(98,94,86,0.25) solid 2px;
     border-radius: 8px;
-    height:200px;
-    width:400px;
     transition:border 0.6;
     overflow:auto;
-    width:550px;
-    height:200px;
+    width:480px;
+    height:180px;
     transition-property:border-color;
     transition-duration: .5s;
     display:inline-block;
@@ -266,12 +311,13 @@ THIRD PAGE
     float:left;
     width:40%;
     height:70%;
-    padding:18px 18px;
+    padding-top:14px;
+    padding-left:14px;
 }
 
 .capability-img img {
-    width:200px;
-    height:160px;
+    width:260px;
+    height:150px;
     border-radius: 4px;
 }
 
@@ -296,9 +342,10 @@ THIRD PAGE
 .page-2-items:hover,.page-2-items:active,.page-2-items:visited,.page-2-items{
       color:#43b1b1;
 }
-
-
-
+.goal-page-container h1{
+    margin-left:200px;
+    margin-bottom:0px;
+}
 
 /**********************************
 RELATED INFO PAGE
