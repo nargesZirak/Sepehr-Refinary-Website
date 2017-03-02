@@ -217,118 +217,104 @@ MAIN NAVIGATION
     padding:0px 0px;
 }
 
+
 /**********************************
-ALL PAGE 
+PAGE TITLE
 ***********************************/
-.page-container{
-    background:  url(../images/asfalt--light--1920x1080.png) no-repeat center;
-    background-size: cover;  
-    width: 100%;
-    border:white solid 1px;
-}
-/**********************************
-PAGE HEADER IMAGE AND DESCRIPTION
-***********************************/
-.page-header-container{
-    margin: 150px 200px;
-    height:500px;
+.page-title{
+    background-color:white;
     font-family: 'open sans',arial,sans-serif;
-    position:relative;
-    margin-bottom:40px;
-    
-}
-
-.page-image img{
-    width:1000px;
-    height:400px;
-    position: absolute;
-    box-shadow: 1px 5px 5px #e2e2e2;
-    z-index: 2;
-}
-
-.page-description{
-    position:absolute;
-    left:200px;
-    width:600px;
-    background-color:rgba(241,242,243,1); 
-    color:	#333;
-    padding:20px 30px;
-    font-size:1.2em;
-    line-height:30px;
-    font-weight:200;
-    margin-top:303px;
-    margin-left:-143px;
-    z-index: 3;
-} 
-
-.main-title {
-    height:40px;
-    width:150px;
     z-index:3;
-    margin-left:50px;
     position:absolute;
-    margin-top:-50px;
-}
-
-.main-title h1{
-    background-color:#333; 
-    color:rgba(0,0,0,0.8);
-    font-weight:900;
-    line-height:7rem;
+    margin-left:40px;
+    margin-top:20px;
+    padding:10px 20px;
     color:white;
-    padding-left:18px;
+    border:rgba(0,0,0,0.2) solid 2px;
 }
 
-/**********************************
-MAIN PAGE CONTENT
-***********************************/
-.main-content{
-    width: 100%;
-    margin-left:200px; 
+.page-title h1{
+    font-weight:600;
+    line-height:1em;
+    display:inline-block;
+    text-align:center;
+    margin-top:0px;
+    color:#A2BB37;
 }
 
-.main-content-items-container{
-    width:1000px;
-    height:340px;
-    position:relative;
-    padding-top:50px;
-    padding-bottom:50px;
-    border-bottom: rgba(98,94,86,0.25) solid 1px;
-}
-
-.item-img{
-    float:left;
-    width:40%;
-     
+.page-title .first-title{
    
 }
 
-.item-img img {
-    width:380px;
-    height:240px;
-    box-shadow: 1px 5px 5px rgba(98,94,86,0.4);
-    
+.page-title .other-title{
+    margin-left:15px;
+}
+
+/**********************************
+PAGE CONTENT
+***********************************/
+
+.main-content{
+    height:1400px;
+    margin-left:200px; 
+    margin-right:200px; 
+    margin-top: 50px;
+}
+
+.content-items-container{
+    height:180px;
+    position:relative;
+}
+
+
+.item-description-title{
+    height:40px;
+    width:150px;
+    z-index:3;
+    position:absolute;
+    background-color:rgba(162,187,37,1); 
+}
+
+
+.item-description-title h3 a{
+    color:white;
 }
 
 .item-description{
-    float:right;
-    width:60%;
-    padding:20px 0px 30px 40px;
+    top:60px;
+    position:absolute;
+    background-color:rgba(241,242,243,0.5); 
+    color:	#333;
+    font-size:1.2em;
+    line-height:30px;
     font-weight:200;
-}
-.item-description h3 a{
+    width:100%;
+    padding:20px 0px;
+    font-weight:200;
+    z-index: 2;
+    border:rgba(0,0,0,0.1) solid 2px;
+    padding :40px 40px;
+    
+} 
+.item-description h3{
     color:rgba(0,0,0,0.7);
-    text-align: left;
+    font-weight:500;
 }
+
 .item-description p{
-    color:gray;
+    color:rgba(0,0,0,0.6);
     text-align: left;
-    font-size:1.3em;
-    font-weight:100;
+    font-size:1em;
+    font-weight:400;
+    padding-left: 20px;
 }
 
-
-
+.item-description ul{
+    color:rgba(0,0,0,0.6);
+    font-size:1em;
+    font-weight:400;
+    list-style:square ;
+}
 
 
 /**********************************
