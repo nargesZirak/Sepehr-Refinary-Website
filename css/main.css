@@ -24,7 +24,7 @@ h2{
 
 h1{
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:40px;
     font-weight:bolder;
     font-size:3em;
     color:#333;
@@ -96,92 +96,137 @@ img {
     display: table;
 }
 
+
+/**********************************
+Language Selector
+***********************************/
+.imd-select {
+	height:50px;
+	width: 200px;
+    right:0;
+    margin-top:10px;
+    margin-right:20px;
+    font-family: "Days one";
+}
+.imd-select a {
+    text-decoration: none;
+}
+.imd-select ul {
+    list-style: none;
+    padding: 0;
+}
+
+.imd-selector {
+    font-size:1.2em;
+	display: block;
+}
+.imd-selector:after {
+	content: '\f078';
+    font: normal normal normal 12px/1 FontAwesome;
+	position: absolute;
+    padding-top:7px;
+    padding-left:5px;
+    color:#333;
+}
+.imd-select-list {
+  display: none;
+}
+
+.imd-select-list li a{
+    font-size:.8em important;
+}
+
+.imd-select a {
+   color:#2a3109;
+}
+.imd-select a :hover {
+    cursor: pointer;
+    color:#2a3109;
+}
+
+imd-select-list-item:hover{
+    text-decoration:underline;
+}
 /**********************************
 TOP NAVIGATION
 ***********************************/
 .top-navbar {
-   font-family:Kanit;
+   font-family:"Roboto";
    border-radius: none;
-   background-color:white;
-   height:120px;
-   margin-left:130px;
-   margin-right:130px;
+   height:100%;
+   width:83%;
+   margin: 0 auto;
    position:relative;
+   font-size:1.1em;
+}
+
+.logo{
+    display:inline-block;
+    font-weight:bold;
+    float:left;
+    width:300px;
 }
 
 .search-lang{
     float:right;
     display:inline-block;
-    width:30%;
-}
-
-.logo{
-    display:inline-block;
-    margin-top:10px;
+    width:340px;
     color:#a3bb37; 
-    font-weight:bold;
-    float:left;
-    width:30%;
 }
 
 .logo img{
-    width:81px;
-    height:81px;
+    width:105px;
+    height:105px;
+    margin-top:5px;
 }
 
-.lang-wrapper{
-    height:30px;
-    margin-right:0px;
-    margin-top:12px;
-}
-
-ul.lang-wrapper-list {
-    display:inline-block;
-    list-style: none;   
-}
-ul.lang-wrapper-list li {
-    display:inline-block;
-    margin:0;
-}
-
-ul.lang-wrapper-list li a{
-    color:rgba(0,0,0,0.7);
-}
-
-ul.lang-wrapper-list li i{
-    padding:0px 4px;
-    color:rgba(0,0,0,,0.7);
+.logo p{
+    margin-left:5px;
+    color:#83971e;
+    margin-bottom:0px;
+    font-size:1.2em;
+    font-family: "Days one";
+    font-weight:100;
 }
 
 
-.lang-wrapper-list .selected,.lang-wrapper-list i a:hover{
-    border-bottom: rgba(0,0,0,0.7) solid 2px;
-    text-decoration: none;
+.top-navbar a:hover{
+    border:none;
 }
 
-.search-form{
-    position:relative;
-    margin-top:25px;
+.form-control{
+    outline:none;
+    color:#999;
 }
 
-.search-form .form-control{
-   border:rgba(0,0,0,0.5) solid 2px;
-   height:40px;
-   font-size:1.7rem; 
+#imaginary_container{
+    margin-top:28px;
+    margin-bottom:15px;
+    
 }
-
-.search-form .btn {
-    width:40px;
+.stylish-input-group .input-group-addon{
+    background: #A2BB37 !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border:solid #A2BB37 2px;
     height:40px;
-    background-color:rgba(0,0,0,0.6); 
-    color:white;
-    font-weight:900;
-    font-size:1.7rem;
-    top:0;
+    font-size:1em;
+   
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.stylish-input-group button:hover{
+    border:0;
+    background-color:#798b1b;
 }
 
-.search-form .btn:hover {
-    background-color:rgba(0,0,0,0.7);    
+.glyphicon{
+    color:white;
+    font-size:17px;
 }
 
 
@@ -191,16 +236,33 @@ ul.lang-wrapper-list li i{
        margin-left:10px;
     }
     .logo{
-        margin-top:10px;
+        margin-bottom:5px;
+        width:230px;
     }
 	.logo img{
-        width:61px;
-        height:61px;
+        width:70px;
+        height:70px;
+    }
+    .logo p{
+        font-size:1.1em;
     }
     .search-lang{
+        width:130px;
+    }
+    .imd-select {
+        font-size:1em !important;
+        width:120px;
+        font-weight:100;
+    }
+    #imaginary_container{
         display:none;
     }
+}
 
+@media only screen and (max-width: 1100px){
+    .top-navbar {
+       width:95%;
+    }
 }
 
 
@@ -211,78 +273,94 @@ MAIN NAVIGATION
 ***********************************/
 
 .navbar-main {
-   border-radius: none;
-   position: relative;
-   width:100%; 
-   font-size: 1.6em;  
-   color:white;
-   background-color:#a2bb37;;
-   margin-top:5px;
-    font-family:"kanit";
+    border-radius: none;
+    font-size: 1.6em;  
+    font-family:"Days one";
 }
 
-.main-nav-items{
-    color:#43b1b1;
-    color:white;
-}
-#myNavbar{
-    margin-right:250px;
+.main-navbar-ul{
+    background-color:#a2bb37;
+    text-align: center;
+    width:100%;
+    height:70px;
+    margin-left:-31px;
 }
 
 .main-navbar-ul li{
-    padding:5px 5px; 
-    transition-property: all ;
-    transition-duration: 0.5s;
-   
+     float: none;
+     display: inline-block;
+     padding:10px 5px;
+     height:100%;
+     border-radius:none;
+     
 }
 
-.dropdown-menu  li a{
-    background-color:white;
-    font-size:1.2em;
-    transition-property: all ;
-    transition-duration: 0.3s;
+.main-navbar-ul li:hover, .main-navbar-ul li:focus, .main-navbar-ul li:active{
+    background-color:#eaf2c0;
+    border-bottom: rgba(255,247,0,1) solid 5px;
+    text-decoration:none;
+    border-radius:none;
 }
 
-
-.main-navbar-ul li:hover, .main-navbar-ul li:focus{
-    color:black;
-    border-radius: 4px;
-    background-color:#b7ce57;
+.navbar-nav > li > a{
+     color:#161a05;
 }
-
-
 .navbar-nav > li > a:hover,  .navbar-nav > li > a:focus,   .navbar-nav > li > a:active {
-    color:black;
-    border-radius: 4px;
-}
-
-.dropdown-menu  li{
+    background-color:#eaf2c0;
+    text-decoration:none;
     border:none;
 }
 
-.dropdown-menu  li a{
-    color:rgba(98,94,86,0.9);
-    font-weight:100;
-    font-size:1.4rem;
-}
 
- .dropdown-menu li:hover, .dropdown-menu li:focus{
-   border:none;
-   background-color:white;
-}
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
-    text-decoration: underline;
-    background: white;
-    transition:none;
-    color:rgba(98,94,86,0.9);
-}
+
 
 .dropdown-menu{
     margin:0px 0px;
     padding:0px 0px;
 }
 
+ .dropdown-menu li{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    transition-property: all
+    transition-duration: .7s;
+}
+
+.dropdown-menu  li a{
+    background-color:white;
+    font-size:1.3em;
+    transition-property: all;
+    transition-duration: .7s;
+    font-weight:100;
+    font-size:1.6rem;
+    color:#2a3109;
+}
+
+ .dropdown-menu li:hover, .dropdown-menu li:focus  .dropdown-menu > li > a:active .dropdown-menu > li > a{
+   border:none;
+   background-color:white;
+   text-decoration: underline;
+
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:active {
+    text-decoration: underline;
+    background: white;
+    border:none;
+    color:#2a3109;
+}
+
+
+.dropdown-toggle{
+  border-color: #563D7C;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,.dropdown-toggle:active {
+  background-color: #563D7C;
+}
 /**********************************
 MAIN PAGE
 ***********************************/
@@ -294,27 +372,14 @@ MAIN PAGE
     background-position: center ;
     height:500px;
     max-height:500px;
-    max-width:1200px;
+    max-width:1150px;
     width:84%;
     position:relative;
     margin: 0 auto;
-    margin-top:50px;
+    margin-top:30px;
+    margin-bottom:-40px;
     font-family:"Days One";
-    
 }
-
-
-/*.main-page-container:before{
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to top,rgba(47,186,186,0.3)40%,rgba(47,186,186,0.3));
-	opacity: .6;
-}*/
-
 
 
 .main-desc-container{
@@ -404,15 +469,15 @@ THIRD PAGE
 
 .capability-container{
     transition:border 0.6;
-    width:565px;
-    height:360px;
+    width:510px;
+    height:320px;
     max-height:320px;
     transition-property:box-shadow;
     transition-duration: .5s;
-    float:left;
     position:relative;
-    margin: 30px 31px;
     font-family:"Days One";
+    margin:0 auto;
+    margin-bottom:60px;
 }
 
 .outer-description{
@@ -485,6 +550,13 @@ THIRD PAGE
     float:right;
     right:0;
 }
+.container-col-1,.container-col-2{
+    display:inline-block;
+    float:left;
+    width:50%;
+    min-width:570px;
+}
+
 
 @media only screen and (max-width: 800px) {
     .capability-container{  margin: 0 auto; width:100%; margin-bottom:80px;   
@@ -505,10 +577,10 @@ LAST STATEMENT
 }
 
 .work-with-us, .this-year{
-    width:565px;
-    float:left;
-    margin: 30px 31px;
-    display:inline-block;
+    width:510px;
+    margin:0px auto;
+    position:relative;
+    margin-bottom:60px;
 }
 .work-with-us{
     transition-property:box-shadow;
@@ -524,7 +596,6 @@ LAST STATEMENT
 }
 
 .work-with-us-description{ 
-    
     color:white;
     padding: 0px 20px;
     background-color:rgba(162,187,37,1);
@@ -586,8 +657,8 @@ RELATED INFO PAGE
     height:100%;
     background-position:right;
     position:relative;
-    width:86%;
-    margin: 80px auto;
+    width:85%;
+    margin: 50px auto;
     margin-bottom:100px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     font-family:"Days one";
@@ -598,8 +669,8 @@ RELATED INFO PAGE
     width:90%;
     height:100%;
     margin: 0 auto;
-    margin-top:80px;
-    margin-bottom:80px;
+    margin-top:40px;
+    margin-bottom:60px;
     font-size:1em;
     font-weight:lighter;
 }
@@ -722,6 +793,8 @@ RELATED INFO PAGE
     color:#222;
 }
 
+
+
 @media screen and (min-width: 0px) and (max-width: 800px) {
     .related-info-col{  margin: 0 auto; width:100%; margin-bottom:0px;   } 
     .related-info-page-container-large{
@@ -782,7 +855,7 @@ SEOND FOOTER
     font-weight:bold;
     font-size: 1.7rem;
     margin-bottom:20px;
-    padding-top:10px;
+    padding-top:20px;
 }
 
 .first-footer-col  ul{
@@ -817,15 +890,7 @@ SEOND FOOTER
 .newsletter{
     margin-bottom:20px; 
 }
-.input-group {
-    width: 300px;
-    height:100%;
-    margin-top:20px;
-    margin-bottom:20px;
-    border-color: #A2BB37;
-    border: black solid 2px;  
-    clear:both
-}
+
 
 input.btn.btn-lg{
     color:#777;
@@ -915,8 +980,7 @@ THIRD FOOTER
     margin-right:30px;
     float:left;
     text-align: left;
-    display: inline-block;
-    
+    display: inline-block;   
 }
 
 .footer-logo img{
