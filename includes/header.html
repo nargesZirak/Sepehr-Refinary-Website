@@ -1,0 +1,186 @@
+<html lang="en">
+    <head>
+     
+    </head>
+
+      <header id="header">
+                <!-- top navigation bar -->
+                <div class="top-navbar clearfix">
+                  <div class="logo">
+                      <a href="index.html"><img src="images/Y%20Combinator%20Filled.svg"></a>
+                      <p> Parsian Sepehr Refinary</p>
+                  </div>
+                  <div class="search-lang"  align="right">
+                      <div class="imd-select" align="right">
+                        <a href="#" class="imd-selector">Language </a>
+                        <ul class="imd-select-list">
+                          <li><a href="#" class="imd-select-list-item" >English</a></li>
+                          <li><a href="#" class="imd-select-list-item">Farsi</a></li>
+                        </ul>
+                      </div>
+                      <div id="imaginary_container"> 
+                        <div class="input-group stylish-input-group">
+                            <input type="text" class="form-control"  placeholder="Search" >
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>  
+                            </span>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                  
+                
+                <!-- navigation bar -->
+               <div class="container"id="main-navbar-container" >
+              <nav class="navbar navbar-default" >
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <div class="search  search-container">
+                        <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+                        <button type="submit" class="btn btn-primary btn-sm search-button"><span class="glyphicon glyphicon-search search-icon"></span></button>
+                    </div>  
+                  </div>
+                    
+                    
+                  <div id="navbar1" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret "></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">History</a></li>
+                          <li><a href="#">Board of directors</a></li>
+                          <li><a href="#">Mission statement</a></li>
+                        </ul>
+                       </li>  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Operations <span class="caret "></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Drilling Operation</a></li>
+                          <li><a href="#">Refinary Operation</a></li>
+                          <li><a href="#">Planning</a></li>
+                        </ul>
+                      </li>  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Investors <span class="caret "></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Investor pressentations</a></li>
+                          <li><a href="#">Results and reporting</a></li>
+                            <li><a href="#">Governance</a></li>
+                          <li><a href="#">Informatin for Shareholders</a></li>
+                        </ul>
+                      </li>  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret "></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Completed projects</a></li>
+                          <li><a href="#">Executing projects</a></li>
+                          <li><a href="#">Future projects</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HSEQ<span class="caret "></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Health</a></li>
+                          <li><a href="#">Security</a></li>
+                          <li><a href="#">Environment</a></li>
+                          <li><a href="#">System quality</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                      
+                      
+                  </div>
+                  <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+              </nav>
+            </div>
+            
+          
+            <script type='text/javascript'>
+            $(function() {
+  
+              var $imdSelect = $('.imd-select');
+              var $imdSelector = $imdSelect.find('.imd-selector');
+              var $imdSelectList = $imdSelect.find('.imd-select-list');
+              var $imdSelectListItem = $imdSelectList.children('li');
+
+
+              // Hover
+              $imdSelector.hover(function(){
+                $(this).addClass('imd-focus');
+              }, function() {
+                $(this).removeClass('imd-focus');
+              });
+
+              // click to open menu list
+              $(document).click(function(e){
+                if(!$imdSelector.is(e.target) && $imdSelector.has(e.target).length === 0) {
+                  $imdSelectList.hide();
+                } else {
+                  $imdSelectList.slideToggle('fast');
+                }
+              });
+
+              // get menu list to selector
+              $imdSelectListItem.each(function(){
+                $(this).click(function(){
+                  // console.log($(this).text());
+                  $imdSelectListItem.removeClass('selected');
+                  $(this).addClass('selected');
+                  $imdSelector.text($(this).text())
+                });
+              });
+
+            });
+          </script>
+            <script>
+                $(window).on({
+                    'resize':function(){
+                         var viewportWidth = $(window).width();
+                         if (viewportWidth < 750) {
+                             $(".caret").addClass("pull-right");
+                             $(".search-container").show();
+                         }
+                         if ($(window).width()>= 750) {
+                             $(".caret").removeClass("pull-right");
+                             $(".search-container").hide();
+                         }
+                         if ($(window).width()< 400) {
+                             $(".search-container").hide();
+                         }
+                       
+                    }
+                });
+            </script>
+          
+          <script type='text/javascript'>
+              //Shorthand for $(document).ready(){ ... }
+              $(function(){
+                 var viewportWidth = $(window).width();
+                 if (viewportWidth < 750) {
+                     $(".caret").addClass("pull-right");
+                     $(".search-container").show();
+                 }
+                 if ($(window).width()>= 750) {
+                     $(".caret").removeClass("pull-right");
+                     $(".search-container").hide();
+                 }
+                 if ($(window).width()< 400) {
+                     $(".search-container").hide();
+                 } 
+              });
+           </script>
+           
+          
+                
+    </header>   <!-- main-header -->
+
+    
+</html>

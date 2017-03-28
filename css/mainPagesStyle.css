@@ -1,0 +1,188 @@
+
+/**********************************
+ALL PAGE 
+***********************************/
+
+.page-right-arrow:after {
+    content: "\00A0\203A";
+    font-weight:bold;
+    font-size:1em;
+}
+/**********************************
+PAGE HEADER IMAGE AND DESCRIPTION
+***********************************/
+.page-header-container{
+    width:85%;
+    height:100%;
+    margin: 70px auto;
+    font-family: 'Days one';
+    position:relative;
+}
+
+.page-image img{
+    width:100%;
+    height:auto;
+    max-height:400px;
+    box-shadow: 1px 5px 5px #e2e2e2;
+    z-index: 2;
+    margin:0 auto;
+	display: block;
+}
+
+.page-description{
+    position:relative;
+    max-width:600px;
+    width:100%;
+    background-color:rgba(241,242,243,1); 
+    color:	#333;
+    padding:20px 30px;
+    font-size:1em;
+    line-height:30px;
+    font-weight:100;
+    z-index: 3;
+    margin-top:-90px;
+    margin-left:100px;
+} 
+
+.main-title {
+    height:40px;
+    z-index:3;
+    margin-left:100px;
+    position:absolute;
+    margin-top:-50px;
+    margin-left:100px;
+}
+
+.main-title h1{
+    background-color:#333; 
+    color:rgba(0,0,0,0.8);
+    font-weight:700;
+    color:white;
+    font-size:2.5em;
+    padding: 13px 18px;
+}
+.page-description p{
+    font-size:1.2em;
+    font-weight:100
+}
+
+@media only screen and (max-width: 800px){
+    .page-description p{
+        font-size:1.2em;
+    }
+    .page-description {
+        padding:10px 15px 5px 20px;
+        margin-top:0px;
+        margin-left:0px;
+        margin-bottom:0px;
+        width:100%;
+        max-width:100%;
+    }
+    .page-header-container{
+        width:100%
+    }
+}
+
+
+/**********************************
+MAIN PAGE CONTENT
+***********************************/
+.main-content{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom:70px;
+}
+
+.item-description,.item-img{
+    display:inline-block;
+}
+
+.main-content-items-container{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom:25px;
+    position:relative;
+    font-family:"Days One";
+}
+
+hr.style3 {
+	 border: 0; 
+     height: 1px; 
+     background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+     background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+     background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+
+.item-description{
+    height: 100%;
+    width: 70%;
+    float:right;
+    padding:20px 20px;
+} 
+
+.item-img{
+    float:left;
+    width:30%;
+    top:0;
+    bottom: 0;
+}
+
+.item-img img{
+    max-height:250px;
+}
+
+.item-description h2 a{
+    color:#333;
+    text-align: left;
+    font-size:1.3em;
+}
+
+.item-description h2 a:hover{
+    text-decoration: underline;
+    border:none;
+}
+
+.item-description p{
+    color:gray;
+    text-align: left;
+    font-size:1.3em;
+    font-weight:100;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .main-content{
+        width: 95%;
+    } 
+    .item-image{
+      width: 40%;
+    }
+    .item-img img{
+        height:auto;
+    }
+    .item-description h2 a{
+        font-size:0.9em;
+    }
+    .item-description p{
+        font-size:1.1em;
+    }
+    .item-description{
+        padding-top:0px;
+    }
+}
+
+
+
+
+/**********************************
+ABOUT CONTENT
+***********************************/
+
+
+
+

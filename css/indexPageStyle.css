@@ -1,0 +1,469 @@
+
+
+/**********************************
+MAIN PAGE
+***********************************/
+
+.main-page-container{
+    background:  url(../images/Refinery%20Workers.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position: center ;
+    height:500px;
+    max-height:500px;
+    max-width:1150px;
+    width:84%;
+    position:relative;
+    margin: 0 auto;
+    margin-bottom:-40px;
+    margin-top:30px;
+    font-family:"Days One";
+}
+
+
+.main-desc-container{
+    position:absolute;
+    display: table;
+    height:100%;
+    width:35%;
+    left:5%;
+    background-color:rgba(204,204,204,0.8);
+   
+} 
+
+.inside-main-desc-container{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left:40px;
+    padding-right:40px;
+    
+}
+
+
+.inside-main-desc-container h2 {
+    margin-top:0px;
+    font-size:2.3em;
+    font-weight:bolder;
+    color:#222;
+    line-height:1.5em;
+}
+.inside-main-desc-container p {
+    font-size:1.6em;
+    color:#3e422e;
+    margin-bottom:10px;
+    font-weight:100;
+    text-shadow: 1px px 1px rgba(0,0,0,0.2);
+    
+} 
+
+.main-description-sm{
+    width:100%;
+    height:100%;
+    background-color:#a2bb37;
+    color:white;
+    margin-top:-15px;
+    padding:5px 20px;
+    padding-bottom:18px;
+    font-family:"Days One"; 
+}
+
+
+a.read-more, a.read-more:hover, a.read-more:active, a.read-more:focus{
+    font-size:1.2em;
+    padding:7px 10px;
+    color:white;
+    background-color:#5c6a15;
+    font-family:"Roboto";
+}
+
+
+@media (min-width:800px) { 
+    .main-description-sm{display:none;} 
+    .main-desc-container{display:table;} 
+    .main-page-container{width:100%;    }
+} 
+@media (max-width:800px) { .main-desc-container{display:none;} .main-description-sm{display:block; } .main-page-container{margin-bottom:0px; width:100%;   margin-top:20px;} } 
+
+/**********************************
+THIRD PAGE
+***********************************/
+.capability-page-container, .group{
+    margin: 0 auto;
+}
+.capability-page-container{
+    margin-top:120px;
+    width:90%;
+}
+
+
+.capability-container:hover{
+    box-shadow: 0 0 6px 4px #999;
+}
+
+.capability-container .capability-image, .capability-container .capability-description{
+    height:100%;
+    display:inline-block;
+}
+
+
+.capability-container{
+    transition:border 0.6;
+    width:90%;
+    height:320px;
+    max-height:320px;
+    transition-property:box-shadow;
+    transition-duration: .5s;
+    position:relative;
+    font-family:"Days One";
+    margin:0 auto;
+    margin-bottom:60px;
+}
+
+.outer-description{
+    position:absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+} 
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+    background-color:#a2bb37;
+}
+
+.inner {
+    width: 40%;
+    padding-left:20px;
+    padding-right:20px;
+    top:0;
+    bottom: 0;
+}
+
+.investors .capability-image{
+    background:  url(../images/Investors_iStock_01.png) no-repeat center;
+    background-size: cover;
+    background-position: left top;
+
+}
+.operations .capability-image{
+    background:  url(../images/operations.jpg) no-repeat center;
+    background-position: left bottom;
+    background-size: cover;
+}
+
+.projects .capability-image{
+    background:  url(../images/projects1.jpg) no-repeat center;
+    background-size: cover;
+    background-position: left top;
+}
+.mission .capability-image{
+    background:  url(../images/hseq2.jpg) no-repeat center;
+    background-size: cover;
+    background-position: right bottom;
+}
+.capability-image{
+    width: 60%;
+    z-index:902;
+    position:absolute;
+    top:0;
+    bottom: 0;
+}
+
+.container-col-1 .inner {
+    float:right;
+    right:0;
+}
+
+.container-col-1 .capability-image{
+    float:left;
+    left:0;
+}
+
+.container-col-2 .inner {
+    float:left;
+    left:0;
+}
+
+.container-col-2 .capability-image{
+    float:right;
+    right:0;
+}
+.container-col-1,.container-col-2{
+    display:inline-block;
+    float:left;
+    width:50%;
+}
+
+
+
+/**********************************
+LAST STATEMENT
+***********************************/
+.work-with-us-wrapper{
+    margin: 0 auto;
+    width:90%;
+    height:100%;
+    font-family:"Days One";
+}
+
+.work-with-us, .this-year{
+    width:90%;;
+    margin:0px auto;
+    position:relative;
+    margin-bottom:60px;
+}
+.work-with-us{
+    transition-property:box-shadow;
+    transition-duration: .5s;
+}
+
+.work-with-us-image{
+    background:  url(../images/Securpolice_sicurezza-milano_lavoro.jpg) no-repeat center;
+    background-size: cover;
+    width:100%;
+    height:200px;
+    top:0;
+}
+
+.work-with-us-description{ 
+    color:white;
+    padding: 0px 20px;
+    background-color:rgba(162,187,37,1);
+    width:100%;
+    height:100%;
+    top: 70%;
+    bottom:0;
+    border: #A2bb37 solid 1px;
+}
+
+
+.work-with-us h2{
+   line-height:10px;
+   padding-bottom:5px;
+   color:#222;
+}
+
+
+.work-with-us:hover{
+   -webkit-box-shadow: 0 0 6px 4px #999;
+   -moz-box-shadow: 0 0 6px 4px #999;
+        box-shadow: 0 0 6px 4px #999;
+}
+.this-year{
+    text-align:center;
+    width:100%;
+}
+
+.this-year img{
+    margin: 0 auto;
+    display: block;
+}
+
+#this-year-note{
+    font-size: 1.3em;
+    color:#161a05;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .capability-container, .work-with-us, .this-year{  margin: 0 auto; width:100%; margin-bottom:60px;   
+    } 
+    .capability-page-container, .work-with-us-wrapper{width:90%;}
+    .container-col-1 , .container-col-2 { width:100%; }
+    .work-with-us-wrapper{margin-bottom:60px;}
+     #this-year-note{
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1250px){
+    .capability-page-container, .work-with-us-wrapper{width:100% !important;}
+}
+
+@media only screen and (max-width: 960px) {
+    .capability-page-container, .work-with-us-wrapper{width:90% !important;}
+}
+
+
+/**********************************
+RELATED INFO PAGE
+***********************************/
+.related-info-page-container-large{
+    background:  url(../images/Photo-Washington-T.png);
+    background-size: cover; 
+    height:100%;
+    background-position:right;
+    position:relative;
+    width:86%;
+    margin: 0px auto;
+    margin-bottom:80px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family:"Days one";
+    font-weight:lighter;
+}
+
+.related-info-page-container-small{
+    width:90%;
+    height:100%;
+    margin: 0 auto;
+    margin-top:40px;
+    margin-bottom:60px;
+    font-size:1em;
+    font-weight:lighter;
+}
+.related-info-page-container-large:before{
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background: linear-gradient(to right, rgba(194,218,72,0.6), rgba(194,218,72,0.6) 33%, rgba(180,180,180,0.6) 33%, rgba(180,180,180,0.6)67%, rgba(194,218,72,0.6) 67%, rgba(194,218,72,0.6));
+}
+
+
+.related-info-col{
+    padding: 25px 30px;
+    position:relative;
+    float:left;
+    display:inline-block;
+    width:33%;
+    height:100%;
+    padding-bottom:35px;
+}
+
+
+.related-info-col-sm{
+    padding: 20px 35px;
+    padding-bottom:35px;
+    position:relative;
+}
+
+.related-info-container-sm,.title-sm, .indicators-list-sm-container  {
+    position:relative;
+    z-index:100;
+}
+
+.links, .links-sm{
+    background:  url(../images/image_part_1.jpg) no-repeat center;
+    background-size: cover; 
+}
+.news, .news-sm{
+    background:  url(../images/image_part_2.jpg) no-repeat center;
+    background-size: cover; 
+}
+.indicators, .indicators-sm{
+    background:  url(../images/image_part_3.jpg) no-repeat center;
+    background-size: cover; 
+}
+
+.news:before, .news-sm:before{
+    content: '';
+    position:absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background-color: rgba(180,180,180,0.6);
+}
+
+.links:before, .indicators:before, .links-sm:before, .indicators-sm:before{
+    content: '';
+    position:absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    background-color: rgba(194,218,72,0.6);
+}
+
+
+.related-info-container{
+    margin-top:30px;
+    border-bottom: #72808E dotted 1px;
+}
+
+.related-info-container-sm{
+    margin-top:15px;
+    border-bottom: #72808E dotted 1px;
+}
+
+.date{
+    color:rgba(0,0,0,0.7);
+    font-style:italic;
+    font-size:1.1em;
+    line-height:1em;
+}
+
+.related-info-container .newsLink:hover, .related-info-container .newsLink {
+    color:rgba(0,0,0,1);
+}
+.related-info-container .linksLink:hover, .related-info-container .linksLink {
+    color:rgba(0,0,0,1);
+}
+
+.indicators-list{
+    list-style:none;
+    padding-left:0;
+    padding-top: 20px;
+}
+
+.indicators-list li{
+    padding-bottom:10px;
+}
+
+.indicators-list  p{
+    color:#222 !important;
+    font-weight:lighter;
+}
+
+.related-info-col a:hover, .related-info-col-sm a:hover{
+    border:none;
+    text-decoration:underline;
+}
+
+
+.right-arrow-black:after {
+    content: "\00A0\203A";
+    font-weight:bolder;
+    color:#222;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .related-info-col{  margin: 0 auto; width:100%; margin-bottom:0px;   } 
+    .related-info-page-container-large{
+         display: none;
+    }
+    .related-info-page-container-small{
+         display: block;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+    .related-info-page-container-small{
+         display: none !important;
+    }
+    .related-info-page-container-large{
+         display: block;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .related-info-page-container-large{width:95%;}
+}
+
+@media only screen and (max-width: 960px) {
+    .related-info-page-container-large{width:90%;}
+}
+
+
+
+/***************************
+****************************/
+
+
+
