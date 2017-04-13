@@ -3,23 +3,24 @@
 /**********************************
 MAIN PAGE
 ***********************************/
-
 .main-page-container{
     background:  url(../images/Refinery%20Workers.jpg);
     background-repeat:no-repeat;
     background-size:100% 100%;
     background-position: center ;
-    height:500px;
-    max-height:500px;
-    max-width:1150px;
-    width:84%;
+    height:600px;
+    max-height:600px;
+    width:100%;
     position:relative;
     margin: 0 auto;
     margin-bottom:-40px;
-    margin-top:30px;
+    margin-top:20px;
     font-family:"Days One";
 }
 
+.capability-page-container, .work-with-us-wrapper, .related-info-page-container-large{
+    font-family:"Roboto";
+}
 
 .main-desc-container{
     position:absolute;
@@ -59,7 +60,7 @@ MAIN PAGE
 .main-description-sm{
     width:100%;
     height:100%;
-    background-color:#a2bb37;
+    background-color:white;
     color:white;
     margin-top:-15px;
     padding:5px 20px;
@@ -68,13 +69,6 @@ MAIN PAGE
 }
 
 
-a.read-more, a.read-more:hover, a.read-more:active, a.read-more:focus{
-    font-size:1.2em;
-    padding:7px 10px;
-    color:white;
-    background-color:#5c6a15;
-    font-family:"Roboto";
-}
 
 
 @media (min-width:800px) { 
@@ -82,7 +76,9 @@ a.read-more, a.read-more:hover, a.read-more:active, a.read-more:focus{
     .main-desc-container{display:table;} 
     .main-page-container{width:100%;    }
 } 
-@media (max-width:800px) { .main-desc-container{display:none;} .main-description-sm{display:block; } .main-page-container{margin-bottom:0px; width:100%;   margin-top:20px;} } 
+@media (max-width:800px) { .main-desc-container{display:none;} 
+    .main-description-sm{display:block; border-bottom:rgba(162,187,37,0.6) solid 2px; box-shadow: 0 3px 3px rgba(162,187,37,0.26), 0 3px 3px rgba(162,187,37,0.33); } 
+    .main-page-container{margin-bottom:0px; width:100%; } } 
 
 /**********************************
 THIRD PAGE
@@ -95,10 +91,6 @@ THIRD PAGE
     width:90%;
 }
 
-
-.capability-container:hover{
-    box-shadow: 0 0 6px 4px #999;
-}
 
 .capability-container .capability-image, .capability-container .capability-description{
     height:100%;
@@ -116,7 +108,24 @@ THIRD PAGE
     position:relative;
     font-family:"Days One";
     margin:0 auto;
-    margin-bottom:60px;
+    margin-bottom:80px;
+    
+}
+
+.capability-container a, .work-with-us a{
+    color:#515d1b;
+}
+
+.capability-container, .work-with-us{
+    transition: all .3s;
+    box-shadow: 0 3px 3px rgba(162,187,37,0.36), 0 3px 3px rgba(162,187,37,0.43);
+    border-bottom: rgba(162,187,37,0.5) solid 2px;
+}
+
+
+.capability-container:hover, .work-with-us:hover{
+    /*box-shadow: 0 10px 20px rgba(162,187,37,0.55), 0 7px 7px rgba(162,187,37,0.62);*/
+     border-bottom: rgba(255,247,0,1) solid 4px;
 }
 
 .outer-description{
@@ -129,7 +138,9 @@ THIRD PAGE
 .middle {
     display: table-cell;
     vertical-align: middle;
-    background-color:#a2bb37;
+    /*background-color:#a2bb37;*/
+    
+    background-color:white;
 }
 
 .inner {
@@ -195,6 +206,9 @@ THIRD PAGE
     width:50%;
 }
 
+.capability-container p{
+   
+}
 
 
 /**********************************
@@ -205,17 +219,20 @@ LAST STATEMENT
     width:90%;
     height:100%;
     font-family:"Days One";
+    
 }
 
 .work-with-us, .this-year{
     width:90%;;
     margin:0px auto;
     position:relative;
-    margin-bottom:60px;
+    margin-bottom:80px;
+   
 }
 .work-with-us{
     transition-property:box-shadow;
     transition-duration: .5s;
+     background-color:white;
 }
 
 .work-with-us-image{
@@ -229,12 +246,12 @@ LAST STATEMENT
 .work-with-us-description{ 
     color:white;
     padding: 0px 20px;
-    background-color:rgba(162,187,37,1);
+ 
     width:100%;
     height:100%;
     top: 70%;
     bottom:0;
-    border: #A2bb37 solid 1px;
+   
 }
 
 
@@ -245,14 +262,11 @@ LAST STATEMENT
 }
 
 
-.work-with-us:hover{
-   -webkit-box-shadow: 0 0 6px 4px #999;
-   -moz-box-shadow: 0 0 6px 4px #999;
-        box-shadow: 0 0 6px 4px #999;
-}
+
 .this-year{
     text-align:center;
     width:100%;
+   
 }
 
 .this-year img{
@@ -299,10 +313,12 @@ RELATED INFO PAGE
     position:relative;
     width:86%;
     margin: 0px auto;
-    margin-bottom:80px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom:90px;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    box-shadow: 0 1px 3px rgba(162,187,37,0.12), 0 1px 2px rgba(162,187,37,0.24);
     font-family:"Days one";
     font-weight:lighter;
+ 
 }
 
 .related-info-page-container-small{
@@ -314,6 +330,9 @@ RELATED INFO PAGE
     font-size:1em;
     font-weight:lighter;
 }
+.indicators-list{
+    color:#111 !important;
+}
 .related-info-page-container-large:before{
     content: '';
 	position: absolute;
@@ -321,7 +340,7 @@ RELATED INFO PAGE
 	right: 0;
 	bottom: 0;
 	left: 0;
-    background: linear-gradient(to right, rgba(194,218,72,0.6), rgba(194,218,72,0.6) 33%, rgba(180,180,180,0.6) 33%, rgba(180,180,180,0.6)67%, rgba(194,218,72,0.6) 67%, rgba(194,218,72,0.6));
+    background: linear-gradient(to right, rgba(194,218,72,0.3), rgba(194,218,72,0.3) 33%, rgba(180,180,180,0.3) 33%, rgba(180,180,180,0.3)67%, rgba(194,218,72,0.3) 67%, rgba(194,218,72,0.3));
 }
 
 
@@ -360,6 +379,10 @@ RELATED INFO PAGE
     background-size: cover; 
 }
 
+.related-info-col .title a, .related-info-col-sm  a{
+    color:#111;
+}
+
 .news:before, .news-sm:before{
     content: '';
     position:absolute;
@@ -394,7 +417,7 @@ RELATED INFO PAGE
 .date{
     color:rgba(0,0,0,0.7);
     font-style:italic;
-    font-size:1.1em;
+    font-size:1.2em;
     line-height:1em;
 }
 
@@ -461,9 +484,6 @@ RELATED INFO PAGE
 }
 
 
-
-/***************************
-****************************/
 
 
 

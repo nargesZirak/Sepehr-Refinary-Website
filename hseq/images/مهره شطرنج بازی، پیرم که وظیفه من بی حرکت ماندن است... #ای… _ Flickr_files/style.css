@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+#banner,
+#wrapper{
+    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+}
+*,*:before,*:after{webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+html,body {
+    margin: 0;
+    padding: 0;
+    color:#ffffff;
+}
+:focus {
+    outline: 0;
+}
+::-moz-focus-inner {
+    border: 0;
+}
+
+#wrapper {
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    background: #ffffff; 
+    cursor: pointer;    cursor: hand;
+}
+.abp,#bannerbg,.footer,#cta,#logo{
+    position: absolute;
+    padding: 0;
+    margin:0; 
+}
+.copy{
+   font-family: 'Lato', sans-serif;
+   font-weight: 400; 
+   color: #000;  
+   font-size: 24px;
+   line-height: 20px;
+   text-align: left;
+   height: auto;
+}
+
+#banner {
+    overflow: hidden;
+    border: solid 1px #000000;
+}
+
+#bannerbg{ 
+    width: 400px;
+    height: 350px;
+    background: #ff744a;
+    left: -50px;
+    top: 251px;
+}
+#biker{
+    left: 0;
+    top: 0;
+}
+#cover,#bg{
+    left: 0;
+    top: 0;  
+    opacity: 0;
+}
+
+#copy1{
+    left: 60px;
+    top: 90px;
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    padding: 15px;
+}
+#copy2,#copy4{
+    left: 20px;
+    top: 52px;
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    -webkit-transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    -moz-transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    -o-transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+}
+#copy3{
+    left: 20px;
+    top: 130px;
+        opacity: 0;
+}
+#copy4{
+    left: 20px;
+    top: 138px;
+}
+
+#cta{
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -o-transform: scale(0);
+   transform: scale(0);
+}
+#logo{
+    left: 15px;
+    bottom: -35px;
+}
+#cta{
+    left: 155px;
+    bottom: 8px;    
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0;
+}
+
+
+#banner:active #cta,
+#banner:focus #cta,
+#banner:hover #cta {
+
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -moz-animation-name: hvr-pop;
+    -ms-animation-name: hvr-pop;
+    -o-animation-name: hvr-pop;
+
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -moz-animation-duration: .3s;
+    -o-animation-duration: .3s;
+    -ms-animation-duration: .3s;
+
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+    -moz-animation-iteration-count: 2;
+    -ms-animation-iteration-count: 2;
+    -o-animation-iteration-count: 2;
+}
+
+@-webkit-keyframes hvr-pop {
+50% {-webkit-transform: scale(1.1);}
+}
+@keyframes hvr-pop {
+50% {transform: scale(1.1)}
+}
+@-ms-keyframes hvr-pop  {
+ 50% {-ms-transform: scale(1.1);}
+}
+@-moz-keyframes hvr-pop {
+ 50% {-moz-transform: scale(1.1);}
+}
+@-moz-keyframes hvr-pop {
+ 50% {-moz-transform: scale(1.1);}
+}
+@-o-keyframes hvr-pop {
+ 50% {-o-transform: scale(1.1);}
+}

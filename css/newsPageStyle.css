@@ -1,3 +1,4 @@
+
 /**********************************
 PAGE TITLE
 ***********************************/
@@ -6,32 +7,37 @@ PAGE TITLE
 }
 
 .page-container{
-    width:100%;
+    width:84%;
     height:100%;
     margin: 0px auto;
+    margin-top:20px;
     font-family: 'Days one';
+    padding-bottom:40px;
 }
 
 .page-title{
     font-family: 'Days one';
-    line-height:0px;
-    padding:15px 15px 5px 40px;
+    padding-top:15px;
     z-index:999;
     position:relative;
-    border:rgba(0,0,0,0.1) solid 2px;
-    background-color:rgba(0,0,0,0.8); 
-    background-color:rgba(241,242,243,0.5); 
-    margin-top:0px;
+    background:  url(../images/diamond-eyes-1920x1080.png) no-repeat center;
+    background-size: cover;
+    font-family:Ubuntu;
+    text-shadow: 0 1px 0 rgba(17, 17, 17, 0.5);
+    -webkit-font-smoothing: antialiased;
+    color:#d0de91;
+    text-shadow: 0 2px 0 rgba(17, 17, 17, 0.32);
+    text-align:center;
 }
 
 .page-title h1 {
     line-height:0px;
-    display:inline-block;
-    color:rgba(0,0,0,0.7);
+    display:inline-block;  
+    
 }
 
 .page-title h1 a{
-    color:rgba(0,0,0,0.7);
+    color:	white;
     font-weight:100;
     font-size:.8em;
 }
@@ -46,12 +52,14 @@ PAGE TITLE
 
 @media (max-width:1100px) { 
    .page-container{
- 
+       width:95%;
+       margin-top:30px;
     }
 } 
 @media (max-width:800px) { 
    .page-container{
-    
+       width:100%;
+       margin-top:25px;
     }
 } 
 
@@ -69,27 +77,29 @@ PAGE CONTENT
 
 .page-description{
     position:relative;
-    background-color:rgba(241,242,243,0.5); 
-    color:	#333;
+    Font-family:"Roboto";
+    color:	#515d1b;
     font-size:1.2em;
     line-height:30px;
     font-weight:100;
     width:100%;
     font-weight:200;
     z-index: 2;
-    border:rgba(0,0,0,0.1) solid 2px;
-    border-top:rgba(0,0,0,0.1) solid 8px;
     padding :20px 40px;
+    margin-bottom:50px;
+    margin-top:0px;
+    border:#a2bb37 solid 2px;
+    background-color:white;
 } 
-
-
-
-.first-title {
-    width:80%;  
-    margin:0 auto;
-    border:red solid 1px;
+.page-description h3{
+    color:rgba(0,0,0,0.7);
 }
 
+.page-description p{
+    color:rgba(0,0,0,0.6);
+    text-align: left;
+    font-size:1em;
+}
 
 
 
@@ -98,37 +108,46 @@ PAGE CONTENT
     margin: 0 auto;
     list-style-type: none;
     font-weight:100;
+    list-style-position:inside;
+    padding:0;
 }
 
-.list-item a{
+.list-items li{
+    height:100%;
+    width:100%;
+    padding:10px 10px 30px 0px;
+}
+
+.list-items li:not(:last-child){
+   border-bottom: rgba(162,187,37,1) dotted 2px;
+}
+
+.list-items li .item-description{
+    color:#666;
+    padding-top:10px;
+    
+}
+
+.list-items li .item-title{
+    color:#444;
+}
+
+.list-items li .date{
+    font-style: italic;
+    color:orangered;
+    font-family:"Roboto";
+    font-weight:400;
+}
+
+.list-items li  a{
     color:#333;
 }
 
-.list-item a:hover{
+.list-items li a:hover{
     border:none;
     text-decoration: underline;
 }
 
-.list-item{
-    height:200px;
-    width:90%;
-    padding:10px 20px 30px 0px;
-   
-}
 
-.list-item:not(:last-child){
-   border-bottom: rgba(0,0,0,0.1) solid 2px;
-}
 
-.list-item .item-description{
-    color:#666;
-    padding-top:20px;
-    
-}
 
-.list-item .date{
-    font-style: italic;
-    color:#555;
-    font-family:"Roboto";
-    font-weight:400;
-}

@@ -1,3 +1,4 @@
+
 /**********************************
 PAGE TITLE
 ***********************************/
@@ -9,36 +10,36 @@ PAGE TITLE
     width:84%;
     height:100%;
     margin: 0px auto;
-    margin-top:40px;
-    font-family: 'Days one';
+    margin-top:30px;
+    font-family: 'Roboto';
+    padding-bottom:30px;
 }
 
 .page-title{
-    font-family: 'Days one';
-    line-height:0px;
-    padding:15px 15px 5px 40px;
+    padding-top:40px;
+    padding-bottom:25px;
     z-index:999;
     position:relative;
-    border:rgba(0,0,0,0.1) solid 2px;
-
-    background-color:rgba(0,0,0,0.8); 
-    background-color:rgba(241,242,243,0.5); 
-    margin-top:0px;
+    background:  url(../images/diamond-eyes-1920x1080.png) no-repeat center;
+    background-size: cover;
+    font-family:Ubuntu;
+    text-shadow: 0 1px 0 rgba(17, 17, 17, 0.5);
+    -webkit-font-smoothing: antialiased;
+    color:#d0de91;
+    text-shadow: 0 2px 0 rgba(17, 17, 17, 0.32);
+    text-align:center;
 }
 
-.page-title h1 {
-    line-height:0px;
-    display:inline-block;
-    color:rgba(0,0,0,0.7);
-}
 
-.page-title h1 a{
-    color:rgba(0,0,0,0.7);
+.page-title a{
+    color:	white;
     font-weight:100;
-    font-size:.8em;
+    font-size:3em;
+    line-height:0px;
+    display:inline-block; 
 }
 
-.page-title h1 a:hover{
+.page-title  a:hover{
     border:none;
     text-decoration: underline;
 }
@@ -46,16 +47,17 @@ PAGE TITLE
     margin-left:15px;
 }
 
-@media (max-width:1100px) { 
+@media (max-width:1200px) { 
    .page-container{
-       width:95%;
+       width:90%;
        margin-top:30px;
     }
+    
 } 
 @media (max-width:800px) { 
    .page-container{
        width:100%;
-       margin-top:25px;
+       margin-top:-21px;
     }
 } 
 
@@ -64,6 +66,7 @@ PAGE TITLE
        font-size:22px;
        font-weight:900;
     }
+    
 } 
 
 /**********************************
@@ -73,23 +76,18 @@ PAGE CONTENT
 
 .page-description{
     position:relative;
-    background-color:rgba(241,242,243,0.5); 
-    color:	#333;
+    Font-family:"Roboto";
+    color:	#515d1b;
     font-size:1.2em;
-    line-height:30px;
     font-weight:100;
     width:100%;
     font-weight:200;
     z-index: 2;
-    border:rgba(0,0,0,0.1) solid 2px;
-    border-top:rgba(0,0,0,0.1) solid 8px;
-    padding :20px 40px;
-    margin-bottom:50px;
-    margin-top:0px;
+    padding :20px 40px 40px 40px;
+    margin-bottom:40px;
+    border:#a2bb37 solid 1px;
+    background-color:white;
 } 
-.page-description h3{
-    color:rgba(0,0,0,0.7);
-}
 
 .page-description p{
     color:rgba(0,0,0,0.6);
@@ -104,3 +102,26 @@ PAGE CONTENT
     padding-left:0px;
 }
 
+.item-title{
+    color:#515d1b !important;
+}
+
+@media (max-width:800px) { 
+    .page-description{
+        border-left:none;
+        border-right:none;
+    }
+    .page-title a {
+        font-size:2em;
+    }
+    .page-title{
+        padding-top:25px;
+        padding-bottom:20px;
+    }
+    .page-description{
+        margin-bottom:-30px;
+        padding-bottom: 40px;
+        padding-top: 10px;
+    }
+    
+} 
