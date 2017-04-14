@@ -31,7 +31,7 @@ h1{
     font-weight:100;
 }
 h3{
-    color:#515d1b !important;
+    color:#444 !important;
     font-family:"Roboto" !important;
 }
 
@@ -49,7 +49,7 @@ html {
 }
 
 a,a:hover,a:focus,a:active{
-    color:#515d1b;
+    color:#444;
 }
 a.read-more, a.read-more:hover {
   color:#161a05;
@@ -98,11 +98,10 @@ img {
     max-width: 1400px;
     width:100%;
     font-family:"Days one";
-    /*border-right: rgba(98,94,86,0.6) solid 2px;
-    border-left: rgba(98,94,86,0.6) solid 2px;
-    box-shadow: rgba(98,94,86,1) 0px 0px 20px;*/
     box-shadow: rgba(98,94,86,.6) 0px 0px 10px;
     background-color:#f9fbf2;
+    background:  url(../images/img-noise-361x370.png) !important;
+    background-repeat:no-repeat;
 }
 
 @media only screen and (max-width: 800px) {
@@ -161,7 +160,7 @@ Language Selector
 	position: absolute;
     padding-top:7px;
     padding-left:5px;
-    color:#515d1b;
+    color:#444;
 }
 .imd-select-list {
   display: none;
@@ -172,11 +171,11 @@ Language Selector
 }
 
 .imd-select a {
-   color:#515d1b;
+   color:#444;
 }
 .imd-select a :hover {
     cursor: pointer;
-    color:#515d1b;
+    color:#444;
 }
 
 imd-select-list-item:hover{
@@ -194,20 +193,20 @@ TOP NAVIGATION
    position:relative;
    font-size:1.1em;
 }
-
-.logo{
-    display:inline-block;
-    font-weight:bold;
-    float:left;
-    width:300px;
-}
-
 .search-lang{
     float:right;
     display:inline-block;
     width:340px;
     color:#a3bb37; 
 }
+
+.logo{
+    display:inline-block;
+    font-weight:bold;
+    float:left;
+    
+}
+
 
 .logo img{
     width:105px;
@@ -218,10 +217,15 @@ TOP NAVIGATION
 .logo p{
     margin-left:5px;
     margin-bottom:0px;
-    font-size:1.2em;
-    color:#515d1b;
+    font-size:1em;
+    color:#444;
     font-family: "Days one";
     font-weight:100;
+}
+
+.logo p.sub-logo{
+    font-size:.8em;
+    text-align: right;
 }
 
 .top-navbar a:hover{
@@ -230,7 +234,7 @@ TOP NAVIGATION
 
 .form-control{
     outline:none;
-    color:#999;
+    color:#A2BB37;
 }
 
 #imaginary_container{
@@ -356,17 +360,17 @@ SEARCH NAVBAR
     background-color:white !important;
 }
 /*.search-container .search-button:hover,.search-container .search-button:focus, .search-container .search-button:active .search-container  {
-    border: #a2bb37 solid 1px !important;
+    border: #93aa32 solid 1px !important;
     outline:none !important;
 }*/
 
 .search-container:hover ,.search-container:active , .search-container:focus  {
-    border: #a2bb37 solid 1px !important;
+    border: #A2BB37 solid 1px !important;
     outline:none !important;
 }
 
 .search-icon{
-    color:#a2bb37;
+    color:#A2BB37;
     font-size:1.8rem;
     font-weight:100;
 }
@@ -392,8 +396,8 @@ MAIN NAVIGATION
 #navbar1{
     background-color:white;
     max-height:1000px;
-    border-top:#a2bb37 solid 2px;
-    border-bottom:#a2bb37 solid 2px;
+    border-top:#A2BB37 solid 2px;
+    border-bottom:#A2BB37 solid 2px;
 }
 
 .navbar-nav{
@@ -417,7 +421,7 @@ MAIN NAVIGATION
 }
 
 .navbar-nav a{
-     color:#515d1b !important;
+     color:#444 !important;
 }
 .navbar-nav a:vistited{
      outline:none !important;
@@ -429,9 +433,9 @@ MAIN NAVIGATION
 
 .navbar-header{
     background-color:white;
-    color:#515d1b;
-    border-top:#a2bb37 solid 2px;
-    border-bottom:#a2bb37 solid 2px;
+    color:#444;
+    border-top:#A2BB37 solid 2px;
+    border-bottom:#A2BB37 solid 2px;
 }
 
 .navbar-header button:hover,.navbar-header button:focus, .navbar-header button:active{
@@ -441,14 +445,14 @@ MAIN NAVIGATION
 
 .navbar-header button{
     background-color:white;
-    color:#a2bb37;
-    border: #a2bb37 solid 2px !important;
+    color:#93aa32;
+    border: #93aa32 solid 2px !important;
     float:left;
     margin-left:10px;
 }
 
 .icon-bar{
-    border: #a2bb37 solid 1px;
+    border: #93aa32 solid 1px;
 }
 
 .dropdown-menu{
@@ -475,7 +479,7 @@ MAIN NAVIGATION
     font-size:1.6rem;
     font-weight:100;
     background-color:white !important;
-    color:#515d1b !important;
+    color:#444 !important;
 }
 
 .dropdown-menu li{
@@ -502,7 +506,7 @@ MAIN NAVIGATION
     
     #navbar1{
         border-top:none;
-        border-bottom:#a2bb37 solid 2px;
+        border-bottom:#93aa32 solid 2px;
     }
     
     .dropdown-toggle .caret {
@@ -511,20 +515,20 @@ MAIN NAVIGATION
        height: 0;
        margin-left: 2px;
        vertical-align: middle;
-       border-top: 8px #515d1b dashed;
-       border-top: 8px #515d1b solid\9;
+       border-top: 8px #444 dashed;
+       border-top: 8px #444 solid\9;
        border-right: 8px solid transparent;
        border-left: 8px solid transparent;
     }
     .dropdown-menu li a{
-       color:#515d1b !important;
+       color:#444 !important;
     }
     
     .dropdown-menu li:not(:last-child){
-       border-bottom:#a2bb37 dotted 1px;
+       border-bottom:#93aa32 dotted 1px;
     }
     .navbar-nav > li:not(:last-child) {
-       border-bottom::#a2bb37  dotted 1px;
+       border-bottom::#93aa32  dotted 1px;
     }
     .navbar-nav{
        text-align: left;
@@ -583,7 +587,7 @@ MAIN NAVIGATION
     }
     .navbar-nav > li:hover , .navbar-nav > li:focus,.navbar-nav > li:active, .dropdown.open .dropdown-toggle, .dropdown.open{
         background-color:#f9fbf2 !important;
-        border-bottom: #a2bb37 solid 4px !important;
+        border-bottom: #93aa32 solid 4px !important;
     }
     
     .navbar-nav > li:hover  .navbar-nav  li a{
@@ -598,7 +602,7 @@ MAIN NAVIGATION
     }
     
     /*.dropdown-menu :not(:last-child) {
-          border-bottom: #a2bb37 dotted 1px;
+          border-bottom: #93aa32 dotted 1px;
     }*/
     
   
@@ -771,7 +775,7 @@ THIRD FOOTER
 
 /****** LOGO RIGHT ******/
 .footer-logo{
-    width:200px;
+    font-family:"Days one";
     height:100%;
     margin-right:30px;
     float:left;
@@ -792,12 +796,17 @@ THIRD FOOTER
     margin-bottom:0px;
     font-family: "kanit";
     font-size:16px;
-    color:#a2bb37;
+    color:#93aa32;
     font-weight:100;
     text-shadow: 0 2px 0 rgba(17, 17, 17, 0.32);
     display:block;
     margin-bottom:0px;
     margin-left:2px;
+}
+
+.footer-logo p.sub-logo{
+    text-align: left;
+    font-size:0.8em;
 }
 
 /****** COPYRIGHT RIGHT ******/
