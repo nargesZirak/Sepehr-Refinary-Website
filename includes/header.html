@@ -7,9 +7,8 @@
                 <!-- top navigation bar -->
                 <div class="top-navbar clearfix">
                   <div class="logo">
-                      <a href="../index.html"><img src="images/logo.jpg"></a>
+                      <a href="../index.html"><img src="images/logo.png"></a>
                       <p>PALAYESH PARSIAN SEPEHR</p>
-                      <p class="sub-logo">Limited company</p>
                   </div>
                   <div class="search-lang"  align="right">
                       <div class="imd-select" align="right">
@@ -87,7 +86,7 @@
                         </ul>
                       </li>
                       <li class="dropdown">
-                        <a href="../hseq/hseq.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HSEQ <span class="caret "></span></a>
+                        <a href="../hseq/hseq.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">QHSE <span class="caret "></span></a>
                         <ul class="dropdown-menu" role="menu">
                           <li><a href="../hseq/safety.html">Safety and health programs</a></li>
                           <li><a href="../hseq/valueToSociety.html">Value to Society</a></li>
@@ -156,7 +155,7 @@
                              $(".caret").removeClass("pull-right");
                              $(".search-container").hide();
                          }
-                         if ($(window).width()< 400) {
+                         if ($(window).width()< 450) {
                              $(".search-container").hide();
                          }
                        
@@ -176,12 +175,50 @@
                      $(".caret").removeClass("pull-right");
                      $(".search-container").hide();
                  }
-                 if ($(window).width()< 400) {
+                 if ($(window).width()< 450) {
                      $(".search-container").hide();
                  } 
               });
            </script>
            
+          
+          <script type='text/javascript'>
+              $(function() {
+
+                  var $imdSelect = $('.imd-select');
+                  var $imdSelector = $imdSelect.find('.imd-selector');
+                  var $imdSelectList = $imdSelect.find('.imd-select-list');
+                  var $imdSelectListItem = $imdSelectList.children('li');
+
+
+                  // Hover
+                  $imdSelector.hover(function(){
+                    $(this).addClass('imd-focus');
+                  }, function() {
+                    $(this).removeClass('imd-focus');
+                  });
+
+                  // click to open menu list
+                  $(document).click(function(e){
+                    if(!$imdSelector.is(e.target) && $imdSelector.has(e.target).length === 0) {
+                      $imdSelectList.hide();
+                    } else {
+                      $imdSelectList.slideToggle('fast');
+                    }
+                  });
+
+                  // get menu list to selector
+                  $imdSelectListItem.each(function(){
+                    $(this).click(function(){
+                      // console.log($(this).text());
+                      $imdSelectListItem.removeClass('selected');
+                      $(this).addClass('selected');
+                      $imdSelector.text($(this).text())
+                    });
+                  });
+
+                });
+          </script>
           
                 
     </header>   <!-- main-header -->

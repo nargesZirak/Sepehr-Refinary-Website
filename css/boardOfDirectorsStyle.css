@@ -21,9 +21,11 @@ MAIN PAGE CONTENT
     margin-bottom:20px;
     font-weight:bold;
     text-align: left;
-    font-size:1.3em;
+    font-size:1.5em;
 }
-
+.items-container p{
+    font-size:1.2em;
+}
 
 .items-container img{
     float:left;

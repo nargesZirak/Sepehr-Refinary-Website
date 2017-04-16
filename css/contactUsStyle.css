@@ -9,7 +9,7 @@ PAGE CONTENT
     height:100%;
     margin: 0 auto;
     font-family:"Roboto";
-   
+    
 }
 
 
@@ -20,9 +20,10 @@ CONTACT INFO
 #contact-info {
 	background:white;
 	padding:0px 25px 40px 25px;
-	margin:50px 0;
+	margin:20px 0;
+    margin-bottom:50px;
     font-size:1em;
-    border:#a2bb37 solid 1px;
+    border:#889d2e solid 1px;
 }
 
 #map-canvas{
@@ -50,25 +51,17 @@ CONTACT INFO
 /**********************************
 SUBMIT FORM
 ***********************************/
-
-.contact-form-container {
-	max-width:600px;
-	width:100%;
-	margin:0 auto;
-	position:relative;
-    font-family:"Roboto";
-    font-size:1em;
+#contact {
+	background:#f9fbf2;
+	padding:0px 25px 15px 25px;
+	margin:20px 0;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Roboto"; }
 
-#contact {
-	background:#f9fbf2;
-	padding:0px 25px 15px 25px;
-	margin:50px 0;
-}
 
-h2 {
+
+ h2 {
 	color: #515d1b;
 	display: block;
 	font-size: 2em;
@@ -104,7 +97,7 @@ fieldset label{
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width:100%;
-	border:1px solid #a2bb37;
+	border:1px solid #889d2e;
 	background:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -128,7 +121,7 @@ fieldset label{
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#a2bb37;
+	background:#889d2e;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;

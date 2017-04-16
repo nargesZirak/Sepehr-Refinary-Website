@@ -10,7 +10,7 @@ PAGE TITLE
     width:84%;
     height:100%;
     margin: 0px auto;
-    margin-top:30px;
+    margin-top:25px;
     font-family: 'Roboto';
     padding-bottom:30px;
 }
@@ -20,7 +20,7 @@ PAGE TITLE
     padding-bottom:25px;
     z-index:999;
     position:relative;
-    background:  url(../images/diamond-eyes-1920x1080.png) no-repeat center;
+    background:  url(../images/asfalt--light--1920x1080.png) no-repeat center;
     background-size: cover;
     font-family:Ubuntu;
     text-shadow: 0 1px 0 rgba(17, 17, 17, 0.5);
@@ -57,8 +57,9 @@ PAGE TITLE
 @media (max-width:800px) { 
    .page-container{
        width:100%;
-       margin-top:-21px;
+       margin-top:-22px;
     }
+    
 } 
 
 @media (max-width:500px) { 
@@ -77,34 +78,44 @@ PAGE CONTENT
 .page-description{
     position:relative;
     Font-family:"Roboto";
-    color:	#515d1b;
+    color:	#333;
     font-size:1.2em;
     font-weight:100;
     width:100%;
     font-weight:200;
     z-index: 2;
     padding :20px 40px 40px 40px;
-    margin-bottom:40px;
-    border:#a2bb37 solid 1px;
+    margin-bottom:30px;
+    border:#889d2e solid 1px;
     background-color:white;
 } 
 
 .page-description p{
     color:rgba(0,0,0,0.6);
     text-align: left;
-    font-size:1em;
+    font-size:1.1em;
 }
 
 .page-description ul{
     color:rgba(0,0,0,0.6);
-    font-size:1em;
+    font-size:1.1em;
     list-style:square inside;
     padding-left:0px;
 }
 
 .item-title{
-    color:#515d1b !important;
+    color:#333 !important;
 }
+
+
+.date{
+    /*font-style: italic;*/
+    color:orangered !important;
+    font-family:"Roboto";
+    font-weight:400;
+    margin-bottom:20px;
+}
+
 
 @media (max-width:800px) { 
     .page-description{

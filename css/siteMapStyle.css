@@ -1,13 +1,17 @@
 
 
 ul.site-map{
-    font-size:2em;
+    font-size:22px !important;
     list-style-type: disc;
-    margin-top:30px;
-    margin-left:50px;
+     width:100%;
+    margin: 0 auto;
+    margin-top:10px; 
 }
-
+ul.site-map li a, ul.site-map li{
+    color:#111 !important;
+}
 ul.sub-children{
+    font-size:18px !important;
     margin-left:40px;
     list-style-type: circle;
 }

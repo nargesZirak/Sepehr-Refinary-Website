@@ -20,10 +20,12 @@
 
 .list-items li .item-description{
     color:#666;
-    padding-top:10px;
-    
+    padding-top:10px;  
 }
 
+.item-description{
+    font-size:1.2em !important;
+}
 
 .date{
     /*font-style: italic;*/
@@ -33,7 +35,7 @@
 }
 
 .list-items li  a{
-    color:#515d1b;
+    color:#333 !important;
 }
 
 .list-items li a:hover{
@@ -81,14 +83,14 @@
 
 
 hr.style3 {
-	border-top: 1px dashed #a2bb37;
+	border-top: 1px dashed #889d2e;
 }
 
 hr.style14 { 
   border: 0; 
   height: 1px; 
-  background-image: -webkit-linear-gradient(left, #f9fbf2, #a2bb37, #f9fbf2);
-  background-image: -moz-linear-gradient(left, #f9fbf2, #a2bb37, #f9fbf2);
-  background-image: -ms-linear-gradient(left, #f9fbf2, #a2bb37, #f9fbf2);
-  background-image: -o-linear-gradient(left, #f9fbf2, #a2bb37, #f9fbf2); 
+  background-image: -webkit-linear-gradient(left, #f9fbf2, #889d2e, #f9fbf2);
+  background-image: -moz-linear-gradient(left, #f9fbf2, #889d2e, #f9fbf2);
+  background-image: -ms-linear-gradient(left, #f9fbf2, #889d2e, #f9fbf2);
+  background-image: -o-linear-gradient(left, #f9fbf2, #889d2e, #f9fbf2); 
 }
