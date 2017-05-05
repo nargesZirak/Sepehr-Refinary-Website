@@ -30,7 +30,7 @@
 .date{
     /*font-style: italic;*/
     color:orangered !important;
-    font-family:"Roboto";
+    font-family:"Ubuntu";
     font-weight:400;
 }
 
@@ -83,7 +83,7 @@
 
 
 hr.style3 {
-	border-top: 1px dashed #889d2e;
+	border-top: 1px dashed #ccc;
 }
 
 hr.style14 { 

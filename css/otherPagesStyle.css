@@ -10,32 +10,27 @@ PAGE TITLE
     width:84%;
     height:100%;
     margin: 0px auto;
-    margin-top:25px;
-    font-family: 'Roboto';
+    margin-top:15px;
+    font-family: 'Ubuntu';
     padding-bottom:30px;
 }
 
 .page-title{
-    padding-top:40px;
-    padding-bottom:25px;
+    padding-top:20px;
+    padding-bottom:20px;
     z-index:999;
     position:relative;
     background:  url(../images/asfalt--light--1920x1080.png) no-repeat center;
     background-size: cover;
     font-family:Ubuntu;
-    text-shadow: 0 1px 0 rgba(17, 17, 17, 0.5);
     -webkit-font-smoothing: antialiased;
-    color:#d0de91;
     text-shadow: 0 2px 0 rgba(17, 17, 17, 0.32);
     text-align:center;
 }
-
-
 .page-title a{
     color:	white;
     font-weight:100;
     font-size:3em;
-    line-height:0px;
     display:inline-block; 
 }
 
@@ -50,22 +45,19 @@ PAGE TITLE
 @media (max-width:1200px) { 
    .page-container{
        width:90%;
-       margin-top:30px;
     }
-    
+    .page-title  a{
+       font-size:2.5em;
+    }
 } 
 @media (max-width:800px) { 
    .page-container{
        width:100%;
        margin-top:-22px;
     }
-    
-} 
 
-@media (max-width:500px) { 
-   .page-title h1 a{
-       font-size:22px;
-       font-weight:900;
+   .page-title a{
+        font-size:1em;
     }
     
 } 
@@ -74,46 +66,58 @@ PAGE TITLE
 PAGE CONTENT
 ***********************************/
 
-
 .page-description{
     position:relative;
-    Font-family:"Roboto";
-    color:	#333;
-    font-size:1.2em;
+    Font-family:"Ubuntu";
+    color:	#555;
+    font-size:1.4em;
     font-weight:100;
     width:100%;
     font-weight:200;
     z-index: 2;
-    padding :20px 40px 40px 40px;
+    padding :40px 5%;
     margin-bottom:30px;
-    border:#889d2e solid 1px;
     background-color:white;
+    
 } 
 
 .page-description p{
-    color:rgba(0,0,0,0.6);
     text-align: left;
-    font-size:1.1em;
+    margin-bottom:25px !important;
+}
+
+.page-description p.list-desc{
+    margin-bottom:5px !important;
+}
+
+.page-description h4{
+    font-weight:bold;
+    text-align: left;
+    font-size:1.4em;
+    margin-bottom:25px !important;
+    line-height:1.5em !important;
 }
 
 .page-description ul{
-    color:rgba(0,0,0,0.6);
     font-size:1.1em;
-    list-style:square inside;
-    padding-left:0px;
+    list-style:disc inside;   
 }
+
 
 .item-title{
     color:#333 !important;
 }
 
-
 .date{
     /*font-style: italic;*/
     color:orangered !important;
-    font-family:"Roboto";
+    font-family:"Ubuntu";
     font-weight:400;
     margin-bottom:20px;
+}
+p.inside-desc{
+    margin-left:20px;
+    color:#555;
 }
 
 
@@ -126,13 +130,13 @@ PAGE CONTENT
         font-size:2em;
     }
     .page-title{
-        padding-top:25px;
-        padding-bottom:20px;
+        padding-top:15px;
+        padding-bottom:15px;
     }
     .page-description{
         margin-bottom:-30px;
         padding-bottom: 40px;
-        padding-top: 10px;
+        padding-top: 40px;
     }
     
 } 

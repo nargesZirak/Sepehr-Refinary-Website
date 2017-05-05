@@ -8,8 +8,7 @@ PAGE CONTENT
     width:100%;
     height:100%;
     margin: 0 auto;
-    font-family:"Roboto";
-    
+    font-family:"Ubuntu";
 }
 
 
@@ -18,12 +17,10 @@ CONTACT INFO
 ***********************************/
 
 #contact-info {
+    padding:15px 25px 15px 25px;
 	background:white;
-	padding:0px 25px 40px 25px;
-	margin:20px 0;
-    margin-bottom:50px;
-    font-size:1em;
-    border:#889d2e solid 1px;
+    width:95%;
+    margin: 30px 20px 70px 0px;
 }
 
 #map-canvas{
@@ -41,7 +38,7 @@ CONTACT INFO
 }
 
 #our-contact p{
-    font-weight:400;
+    font-size:1.2em
 }
 .email{
     color:dodgerblue;
@@ -52,8 +49,7 @@ CONTACT INFO
 SUBMIT FORM
 ***********************************/
 #contact {
-	background:#f9fbf2;
-	padding:0px 25px 15px 25px;
+	padding:15px 25px 15px 25px;
 	margin:20px 0;
 }
 
@@ -156,4 +152,21 @@ fieldset label{
 }
 fieldset{
     margin-bottom:10px;
+}
+
+
+
+
+@media (max-width:500px) { 
+  #contact-info {
+      margin: 30px 0px 70px 0px;
+      width:100%;
+  }
+} 
+
+
+@media (max-width:768px) { 
+  #contact {
+      margin-top:0px;
+  }
 }

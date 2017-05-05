@@ -19,47 +19,44 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN">
 
-      <!-- FONT LINKS -->
+       <!-- FONT LINKS -->
       <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Open Sans">
+      href="https://fonts.googleapis.com/css?family=Ubuntu">  
       <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Ubuntu">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Kanit">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Arvo">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Droid Sans">
-    <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Days One"> 
-     <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
       
        
      <!-- LINK TO STYLES -->    
      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-       <link rel="stylesheet" href="css/pageTemp.css">
+     <link rel="stylesheet" href="css/pageTemp.css">
      <link rel="stylesheet" href="css/otherPagesStyle.css">
      <link rel="stylesheet" href="css/contactUsStyle.css">
+     <!-- scripts -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB3j21Fuqshc3l6fD6srcuK7ls7n04n_W8"></script>
+     
+
+      
    
-    
      </head>
     
-    <body>
+     <body>
        <section id="bodyWrap" >
-          
-        <div id="header"></div>   
-       
+            <div id="header"></div>
+            <script> 
+                $(function(){
+                    $("#header").load("../includes/header.html");  
+                });
+             </script>
         
         <div class="main-content-wrapper"> 
            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                         <form id="contact" action="" method="post">
+                         <form id="contact" action="info@palayeshparsian.com" method="post">
                             <h2>Contact us</h2>
                             <fieldset>
                               <label for="filed1"> Your Name</label>
@@ -128,26 +125,14 @@
         <div id="footer"></div>
      </section>
         
-        
-        
-     <!-- scripts -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="JS/googleMap.js"></script>
      <script src="JS/myScript.js"></script>
-     <script src="JS/myScript4.js"></script>
      <script src="JS/myScript5.js"></script>
-     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
      <script> 
         $(function(){
-            $("#header").load("includes/header.html"); 
-            $("#footer").load("includes/footer.html"); 
+            $("#footer").load("../includes/footer.html"); 
         });
      </script>
-     
-     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB3j21Fuqshc3l6fD6srcuK7ls7n04n_W8"></script>
-     <script src="JS/googleMap.js"></script>
-     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>

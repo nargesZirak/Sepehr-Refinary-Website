@@ -1,0 +1,48 @@
+
+/**********************************
+MAIN PAGE CONTENT
+***********************************/
+
+.page-description{
+    padding-top:0px;
+}
+
+.items-container{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    position:relative;
+    margin-top:-20px !important;
+    padding-bottom:10px !important;
+}
+
+
+.items-container h2{
+    margin-bottom:20px ;
+    font-weight:bold;
+    text-align: left;
+    font-size:1.7em;
+    color:#333;
+}
+.items-container p{
+    font-size:1.35em;
+    line-height:1.6em;
+}
+
+.items-container img{
+    float:left;
+    width:30%;
+    max-height:390px;
+    margin-right:40px;
+    margin-bottom:0px;
+}
+
+
+.page-image img{  
+    width:100%;
+    height:auto;
+    z-index: 2;
+    margin:0px auto;
+	display: block;
+}
+

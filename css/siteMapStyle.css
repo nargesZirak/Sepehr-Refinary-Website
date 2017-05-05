@@ -1,22 +1,26 @@
 
-
 ul.site-map{
-    font-size:22px !important;
-    list-style-type: disc;
-     width:100%;
+    font-size:1.3em !important;
+    list-style-type: disc inside;
+    width:100%;
     margin: 0 auto;
-    margin-top:10px; 
+    margin-top:10px;
+    padding-left:0px;
 }
-ul.site-map li a, ul.site-map li{
-    color:#111 !important;
+ul.site-map li{
+    color:#444 !important;
+}
+ul.site-map li a{
+    color:#444 !important;
 }
 ul.sub-children{
-    font-size:18px !important;
-    margin-left:40px;
+    font-size:.8em !important;
+ 
     list-style-type: circle;
 }
-
-
-ul.sub-children a{
-    font-size:1em !important;
+ul.sub-children li a{
+    color:#555 !important;
+}
+@media only screen and  (max-width: 500px) {
+    
 }

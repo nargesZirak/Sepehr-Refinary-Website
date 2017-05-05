@@ -14,18 +14,17 @@ PAGE HEADER IMAGE AND DESCRIPTION
 ***********************************/
 .page-container{
     background-color:white;
-    border:#889d2e solid 1px;
     margin-bottom:70px;
 }
 
 .page-header-container{
     width:100%;
-    height:100%;
+    height:auto;
     margin: 0px auto;
     margin-bottom:100px;
-    font-family: 'Roboto';
-    position:relative;
+    font-family: 'Ubuntu';   
 }
+
 .page-title h1{
     color:white;
 }
@@ -33,46 +32,21 @@ PAGE HEADER IMAGE AND DESCRIPTION
 .page-image img{
     width:100%;
     height:auto;
-    max-height:400px;
     z-index: 2;
     margin:0 auto;
 	display: block;
+    box-shadow: 1px 5px 5px #ddd;
 }
-
-/*.page-desc{
-    position:relative;
-   
-    width:80%;
-    background-color:rgba(241,242,243,1); 
-    background-color:#f9fbf2;
-    color:	#515d1b;
-    padding:20px 30px;
-    font-size:1em;
-    line-height:30px;
-    font-weight:100;
-    z-index: 3;
-    margin-top:-90px;
-    margin-left:10%;
-} */
-
 
 .page-description p{
     font-size:1.2em;
-    font-weight:100
+    font-weight:100;
 }
 
 @media only screen and (max-width: 800px){
     .page-description p{
         font-size:1.2em;
     }
-    /*.page-desc {
-        padding:10px 15px 5px 20px;
-        margin-top:0px;
-        margin-left:0px;
-        margin-bottom:0px;
-        width:100%;
-        max-width:100%;
-    }*/
 }
 
 
@@ -81,8 +55,7 @@ MAIN PAGE CONTENT
 ***********************************/
 .main-content{
     width: 85%;
-    margin: 0 auto;
-    margin-bottom:70px;
+    margin: 0 auto;\
 }
 
 .item-description,.item-img{
@@ -96,16 +69,15 @@ MAIN PAGE CONTENT
     padding-top:20px;
     padding-bottom:25px;
     position:relative;
-    font-family:"Roboto";
+    font-family:"Ubuntu";
 }
-
 
 .item-description{
     height: 100%;
     width: 70%;
     float:right;
-    padding:20px 20px;
-    
+    padding:0px 20px;
+    padding-top:0px !important;
 } 
 
 .item-img{
@@ -122,7 +94,6 @@ MAIN PAGE CONTENT
 .item-description h2 a{
     color:#444 !important;
     text-align: left;
-    font-size:1.3em;
 }
 
 .item-description h2 a:hover{
@@ -134,12 +105,9 @@ MAIN PAGE CONTENT
 .item-description p{
     color:gray;
     text-align: left;
-    font-size:1.3em;
     font-weight:100;
     padding-top:10px;
 }
-
-
 
 
 @media only screen and (max-width: 800px){
@@ -161,9 +129,18 @@ MAIN PAGE CONTENT
     .item-description{
         padding-top:0px;
     }
+    .page-container{
+        margin-bottom:0px;
+    }
 }
 
 
+@media only screen and (max-width: 500px){
+   
+   .page-header-container{
+        margin-bottom:50px; 
+    }
+}
 
 
 

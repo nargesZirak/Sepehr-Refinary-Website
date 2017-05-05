@@ -2,22 +2,23 @@
 
 $(window).on({
     'load':function(){
-        var backgroundImageContainerHeight= ($(window).width())*0.6;
+        var backgroundImageContainerHeight= ($(window).width())*1;
         if ($(window).width() < 800) {
-            $(".main-page-container").height(backgroundImageContainerHeight); 
-            console.log("height is"+ backgroundImageContainerHeight);
+            $(".item").height(backgroundImageContainerHeight); 
+            
         }
         if ($(window).width()>= 800) {
-            $(".main-page-container").height(500); 
+            $(".item").height(600); 
         }
     },
     'resize':function(){
-        var backgroundImageContainerHeight= ($(window).width())*0.6;
+        var backgroundImageContainerHeight= ($(window).width())*1;
         if ($(window).width() < 800) {
-            $(".main-page-container").height(backgroundImageContainerHeight); 
+            $(".item").height(backgroundImageContainerHeight); 
+           
         }
         if ($(window).width()>= 800) {
-            $(".main-page-container").height(500); 
+            $(".item").height(600); 
         }
     }
 });

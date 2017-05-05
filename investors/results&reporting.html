@@ -19,31 +19,24 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN">
 
-      <!-- FONT LINKS -->
+       <!-- FONT LINKS -->
       <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Open Sans">
+      href="https://fonts.googleapis.com/css?family=Ubuntu">  
       <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Ubuntu">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Kanit">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Arvo">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Droid Sans">
-    <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Days One"> 
-     <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
       
        
      <!-- LINK TO STYLES -->    
      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-     <link rel="stylesheet" href="../css/pageTemp.css">
+        <link rel="stylesheet" href="../css/pageTemp.css">
      <link rel="stylesheet" href="../css/otherPagesStyle.css">
+     <link rel="stylesheet" href="../css/tableStyle.css">
+     <!-- scripts -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
      
     
      </head>
@@ -51,6 +44,11 @@
     <body>
        <section id="bodyWrap" >
             <div id="header"></div>
+            <script> 
+                $(function(){
+                    $("#header").load("../includes/header.html");  
+                });
+             </script>
             
         
             <div class="page-container clearfix">
@@ -59,36 +57,88 @@
                         <a class="other-title " href="results&reporting.html">Results and reporting</a>
                     </div>
                     <div class="page-description">
-                      <h3>2010</h3> 
-                      <p>Palayesh Parsian Sepehr Company as executive firm to accomplish Ethan recovery program in both phase of construction and operation has been established on 2010 based on partnership agreement between Energy Sepehr Company and national Iranian gas company (NIGC).
+                       
+                       
                         
-                      </p>
+                      <p>Annual sales income forecast:</p>
+                        
+                       <table>
+                            <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th>Unit Price (USD/Ton)</th>
+                                <th>Yearly Sales (USD)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Ethane  </td>
+                                <td>1,340,000 </td>
+                                <td>240</td>
+                                <td>317,224,190</td>
+                            </tr>
+                            <tr>
+                                <td>Propane </td>
+                                <td>685,410 </td>
+                                <td>509</td>
+                                <td>331,453,093</td>
+                            </tr>
+                            <tr>
+                                <td>Butane </td>
+                                <td>503,580 </td>
+                                <td>516</td>
+                                <td>246,068,945</td>
+                            </tr>
+                            <tr>
+                                <td>Natural Gasoline </td>
+                                <td>1,047,000 </td>
+                                <td>430</td>
+                                <td>411,811,935 </td>
+                            </tr>
+                            <tr class="total">
+                                <td>Total </td>
+                                <td>3,575,990</td>
+                                <td>1695</td>
+                                <td>1,306,558,163</td>
+                            </tr>
+                                 
+                            </tbody>
+                       </table>
+                    
+                      <p>According to the capacity of the plan and the perspective of demand for the products,
+                            The most important characteristic of the current plan is the separation of the natural gas to 5 products and at the same time delivering the natural gas to the national trunkline. With production of ethane and heavier products with annual capacity of about 3.5 million ton and economic value of 1.9 billion USD is provided by this plan.</p>
+                      <p>The very fast growth we are achieving in this project enable us to start study for another projects.</p>
+                      <p>Development gas field and petrochemical projects <br>
+                          And also deep  C2+ recovery from gas plans
+                          And also gas stations
+                            Development of gas fields
+                            Downstream plants for petrochemical 
+                        </p>
+                      <p class=""></p>
+                      <p>Offer you an attractive dividend that will remain stable or increased each year.</p>
 
-                      <h3>2014</h3> 
-                      <p>In 2014 according to agreement between the executive headquarter of imam Khomeini’s directive and Iranian oil ministry, Palayesh Parsian Sepehr Company as subsidiary of Tadbir energy foundation has been assigned to perform Ethan recovery program.</p>
+                        
+                       <p></p>
+                        <p class="list-desc"> Our unique position in the promising markets of gas and this business model enables us to:</p>
+                        <ul>
+                          <li>Offer you an attractive dividend that will remain stable or increased each year </li>
+                          <li>Maintain a solid financial position, continue investing in our future growth.</li>
+                       </ul>
+
                     </div>
             </div>           
             <div id="footer"></div>
      </section>
         
         
-        
-     <!-- scripts -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <script src="../JS/myScript.js"></script>
-     <script src="../JS/myScript4.js"></script>
+    <!-- scripts -->
      <script src="../JS/myScript5.js"></script>
-     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
      <script> 
         $(function(){
-            $("#header").load("../includes/header.html"); 
             $("#footer").load("../includes/footer.html"); 
         });
      </script>
-   
-     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>

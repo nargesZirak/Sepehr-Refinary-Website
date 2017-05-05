@@ -19,46 +19,44 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta http-equiv="X-FRAME-OPTIONS" content="SAMEORIGIN">
 
-      <!-- FONT LINKS -->
+       <!-- FONT LINKS -->
       <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Open Sans">
+      href="https://fonts.googleapis.com/css?family=Ubuntu">  
       <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Ubuntu">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Kanit">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Arvo">
-      <link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Droid Sans">
-    <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Days One"> 
-     <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
       
        
      <!-- LINK TO STYLES -->    
      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-     <link rel="stylesheet" href="../css/pageTemp.css">
+        <link rel="stylesheet" href="../css/pageTemp.css">
      <link rel="stylesheet" href="../css/otherPagesStyle.css">
      <link rel="stylesheet" href="../css/mainPagesStyle.css">
      <link rel="stylesheet" href="../css/listStyle.css">
+     <!-- scripts -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+     
     
      </head>
     
     <body>
        <section id="bodyWrap" >
-         <div id="header"></div>
+            <div id="header"></div>
+            <script> 
+                $(function(){
+                    $("#header").load("../includes/header.html");  
+                });
+             </script>
          <div class="page-container"> 
                <div class="page-header-container clearfix">
                    <div class="page-title">
                         <a class="first-title others-right-arrow" href="investors.html">Investors</a>
                    </div>
                    <div class="page-image">
-                      <img src="images/share-holder-information.jpg">
+                      <img src="images/investment-1.jpg">
                    </div>
                   <!-- <div class="page-desc">
                        <p>As an integrated energy company, we explore for, produce, refine and market products essential to society. Learn more about our perspective on topics that affect our company, our industry and our world.</p>
@@ -71,11 +69,21 @@
                 
                 <li class="main-content-items-container  clearfix ">
                     <div class="item-description">
-                          <h2><a href="investorsPresentations.html" class=" page-right-arrow" target="">Speeches and presentation</a></h2>
+                          <h2><a href="Products.html" class=" page-right-arrow" target="">Products</a></h2>
                           <p>As an integrated energy company, we explore for, produce, refine and market products essential to society.</p>
                     </div>
                     <div class="item-img">
-                          <img src="images/investor-presentation.png" alt="Investors presentation" >
+                          <img src="images/products.png" alt="Investors presentation" >
+                    </div>
+                </li>
+                <hr class="style3">
+                <li class="main-content-items-container  clearfix ">
+                    <div class="item-description">
+                          <h2><a href="investmentProjects.html" class=" page-right-arrow" target="">Investment projects</a></h2>
+                          <p>As an integrated energy company, we explore for, produce, refine and market products essential to society.</p>
+                    </div>
+                    <div class="item-img">
+                        <img src="images/investment-projects.png" alt="shareHolders" >
                     </div>
                 </li>
                 <hr class="style3">   
@@ -88,28 +96,16 @@
                         <img src="images/key-visual.png" alt="Reporting" >
                     </div>
                 </li>
-                  <hr class="style3">
-                <li class="main-content-items-container  clearfix ">
+                 <hr class="style3">   
+                 <li class="main-content-items-container  clearfix ">
                     <div class="item-description">
-                          <h2><a href="shareHolders.html" class=" page-right-arrow" target="">Information of shareholders</a></h2>
-                          <p>As an integrated energy company, we explore for, produce, refine and market products essential to society.</p>
+                          <h2><a href="Working%20with%20us.html" class=" page-right-arrow" target="">Working with us</a></h2>
+                          <p>Our goal is to attract and retain the very best quality people and support.</p>
                     </div>
-                    <div class="item-img">
-                        <img src="images/istock_000042826844_xxxlarge_HeroCrop.png" alt="shareHolders" >
+                   <div class="item-img">
+                        <img src="images/work.png" alt="Reporting" >
                     </div>
                 </li>
-                    <hr class="style3">
-                <li class="main-content-items-container  clearfix ">
-                    <div class="item-description">
-                          <h2><a href="investorsContacts.html" class="  page-right-arrow" target="">Investors relations contacts</a></h2>
-                          <p>As an integrated energy company, we explore for, produce, refine and market products essential to society.</p>
-                    </div>
-                    <div class="item-img">
-                        <img src="images/inverstors_media_promobox.png" alt="shareholders-contacts" >
-                    </div>
-                   
-                </li>
-                
                 
                 
                </ul>
@@ -121,21 +117,12 @@
         
         
     <!-- scripts -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <script src="../JS/myScript.js"></script>
-     <script src="../JS/myScript4.js"></script>
      <script src="../JS/myScript5.js"></script>
-     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
      <script> 
         $(function(){
-            $("#header").load("../includes/header.html"); 
             $("#footer").load("../includes/footer.html"); 
         });
      </script>
-     
-     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
